@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -16,6 +18,16 @@ const App = () => {
       localStorage.setItem("theme", "light");
     }
   }, [theme]);
+  // AOS initial
+  useEffect(()=>{
+    AOS.init({
+      offset : 100,
+      duration : 800,
+      easing : "ease-in-sine",
+      delay : 100,
+    })
+    AOS.refresh();
+  },[]);
   return (
     <div>
       <Navbar theme={theme} setTheme={setTheme} />

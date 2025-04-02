@@ -12,7 +12,11 @@ const Hero = ({ theme }) => {
           className="grid place-items-center grid-cols-1
             sm:grid-cols-2"
         >
-          <div className="order-1 sm:order-2">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            className="order-1 sm:order-2"
+          >
             <img
               src={theme == "dark" ? car : yellowCar}
               alt=""
@@ -21,16 +25,24 @@ const Hero = ({ theme }) => {
             />
           </div>
           <div className="order-2 sm:order-1 space-y-5 sm:pr-32">
-            <p className="text-primary text-2xl font-serif">Effortless</p>
-            <h1 className="text-5xl lg:text-7xl font-semibold font-serif">
+            <p data-aos="fade-up" className="text-primary text-2xl font-serif">
+              Effortless
+            </p>
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="600"
+              className="text-5xl lg:text-7xl font-semibold font-serif"
+            >
               Car Rental
             </h1>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="1000">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Accusamus facere corporis blanditiis suscipit dolorum vero
               consectetur et vel delectus voluptates.
             </p>
             <button
+            data-aos="fade-up"
+            data-aos-duration="1500"
               className="bg-primary hover:bg-primary/80 duration-300 px-6 py-2
                 rounded-md text-black"
             >
