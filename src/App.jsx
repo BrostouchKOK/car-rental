@@ -4,6 +4,7 @@ import Hero from "./components/hero/Hero";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About from "./components/about/About";
+import Services from "./components/services/Services";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -34,6 +35,7 @@ const App = () => {
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero theme={theme} />
       <About/>
+      <Services/>
     </div>
   );
 };
