@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
 import CarList from "./components/carList/CarList";
+import Testimonail from "./components/testimonail/Testimonail";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -38,6 +39,7 @@ const App = () => {
       <About/>
       <Services/>
       <CarList/>
+      <Testimonail/>
     </div>
   );
 };
