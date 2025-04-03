@@ -7,6 +7,7 @@ import About from "./components/about/About";
 import Services from "./components/services/Services";
 import CarList from "./components/carList/CarList";
 import Testimonail from "./components/testimonail/Testimonail";
+import AppStoreBanner from "./components/appStoreBanner/AppStoreBanner";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -33,13 +34,14 @@ const App = () => {
     AOS.refresh();
   }, []);
   return (
-    <div>
+    <div className="bg-white dark:bg-black dark:text-white">
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero theme={theme} />
       <About/>
       <Services/>
       <CarList/>
       <Testimonail/>
+      <AppStoreBanner/>
     </div>
   );
 };
