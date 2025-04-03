@@ -27,17 +27,24 @@ const AppStoreBanner = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At amet
               tempora molestias quod!
             </p>
-            <div data-aos="fade-up" className="flex flex-wrap justify-center items-center gap-4">
-                <a href="#">
-                    <img src={playStore} alt="" 
-                        className="max-w-[150px] sm:max-w-[120] md:max-w-[200px]"
-                    />
-                </a>
-                <a href="#">
-                    <img src={appStore} alt="" 
-                        className="max-w-[150px] sm:max-w-[120] md:max-w-[200px]"
-                    />
-                </a>
+            <div
+              data-aos="fade-up"
+              className="flex flex-wrap justify-center items-center gap-4"
+            >
+              <a href="#">
+                <img
+                  src={playStore}
+                  alt=""
+                  className="max-w-[150px] sm:max-w-[120] md:max-w-[200px]"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src={appStore}
+                  alt=""
+                  className="max-w-[150px] sm:max-w-[120] md:max-w-[200px]"
+                />
+              </a>
             </div>
           </div>
         </div>
