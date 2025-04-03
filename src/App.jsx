@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import About from "./components/about/About";
 
 const App = () => {
   const [theme, setTheme] = useState(
@@ -19,19 +20,20 @@ const App = () => {
     }
   }, [theme]);
   // AOS initial
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({
-      offset : 100,
-      duration : 800,
-      easing : "ease-in-sine",
-      delay : 100,
-    })
+      offset: 100,
+      duration: 800,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
     AOS.refresh();
-  },[]);
+  }, []);
   return (
     <div>
       <Navbar theme={theme} setTheme={setTheme} />
-      <Hero theme={theme}/>
+      <Hero theme={theme} />
+      <About/>
     </div>
   );
 };
