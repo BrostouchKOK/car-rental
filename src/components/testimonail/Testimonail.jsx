@@ -18,7 +18,7 @@ const Testimonail = () => {
           </p>
         </div>
         {/* card section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-black sm:text-white">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-black sm:text-dark dark:text-white">
           {testimonialData.map((item, index) => {
             return (
               <div

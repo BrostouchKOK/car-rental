@@ -4,7 +4,8 @@ import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 
 const Navbar = ({ theme, setTheme }) => {
   return (
-    <nav className="shadow-md bg-white dark:bg-dark dark:text-white duration-200">
+    <nav className="shadow-md bg-white dark:bg-dark dark:text-white duration-200
+      relative z-40">
       <div className="container">
         <div className="flex justify-between items-center">
           <div>
